@@ -37,9 +37,13 @@ resource "aws_lambda_function" "sandbox_lambda" {
   #tracing_config {
   #  mode = "Active"
   #}
-  # AWS ECR to cover Lambda as Docker
+  # AWS Elastic Container Registry to cover Lambda inside Docker image
   #image_uri       = aws_ecr_repository.sandbox_ecr_repository.repository_url
   #package_type    = "Image"
+  # Snap start
+  #snap_start {
+  #  apply_on = "PublishedVersions"
+  #}
 }
 
 resource "aws_lambda_provisioned_concurrency_config" "sandbox_lambda_provisioned_concurrency_config" {
