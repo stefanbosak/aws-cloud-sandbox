@@ -66,6 +66,7 @@ __files:__
 - [08-s3-lambda-bucket.tf](08-s3-lambda-bucket.tf): Configuration(s) for S3 bucket (lambda)
 - [09-lambda.tf](09-lambda.tf): Configuration(s) for lambda
 - [10-ecr.tf](10-ecr.tf): Configuration(s) for ECR (elastic container registry)
+- [01-Lambda-S3-events_presentation.pdf](01-Lambda-S3-events_presentation.pdf): Short presentation
 
 __recommended deployment chain:__
 
