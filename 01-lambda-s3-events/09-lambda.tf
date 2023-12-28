@@ -63,7 +63,7 @@ resource "aws_lambda_permission" "sandbox_lambda_permission" {
 #  action        = "lambda:InvokeFunction"
 #  function_name = aws_lambda_function.sandbox_lambda.function_name
 #  principal     = "s3.amazonaws.com"
-#  source_arn    = aws_cloudwatch_event_rule.sandbox_s3_event_rule.arn
+#  source_arn    = aws_s3_bucket.sandbox_s3_event_bucket.arn
 #}
 
 resource "aws_lambda_layer_version" "sandbox_lambda_layer" {
