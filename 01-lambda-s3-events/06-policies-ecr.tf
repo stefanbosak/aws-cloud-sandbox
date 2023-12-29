@@ -3,12 +3,13 @@
 #  statement {
 #    effect = "Allow"
 #    actions = [
-#      "ecr:GetDownloadUrlForLayer",                                     
-#      "ecr:BatchGetImage",                                              
-#      "ecr:PutImage",                                                   
-#      "ecr:InitiateLayerUpload",                                        
-#      "ecr:UploadLayerPart",                                            
-#      "ecr:CompleteLayerUpload"
+#      "ecr:BatchCheckLayerAvailability",
+#      "ecr:InitiateLayerUpload",
+#      "ecr:UploadLayerPart",
+#      "ecr:CompleteLayerUpload",
+#      "ecr:PutImage"
+#      "ecr:BatchGetImage",
+#      "ecr:GetDownloadUrlForLayer",
 #    ]
 #    resources = [
 #      "${aws_ecr_registry.sandbox_ecr_registry.arn}"
